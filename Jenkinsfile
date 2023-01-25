@@ -1,14 +1,14 @@
 pipeline {
     agent any
-    options {
-            timestamps()
-           }
+    options{
+        timestamps()
+    }
     stages {
-        stage('Stage One') {
+        stage('Hello') {
             steps {
-                echo 'One'
                 sh 'sudo ./scripts/hello.sh'
             }
         }
-        
+    }
 }
+
