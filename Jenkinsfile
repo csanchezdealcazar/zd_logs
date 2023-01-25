@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Hello') {
             steps {
-                sh 'sudo ./scripts/hello.sh'
+                echo "Hello everyone!"
             }
         }
     }
